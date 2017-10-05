@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      iChat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="content-center">
+    <h3>Welcome to <strong>iChat.</strong></h3>
+    <p class="details">iChat is simple multi platform chat application built on a hybrid framework.</p>
+  </div>
+  <ion-list>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+
+      <ion-item class="content-center">
+        <button ion-button full large (click)="loginUser()">Next</button>
+      </ion-item>
+    </ion-list>
+</ion-content>
